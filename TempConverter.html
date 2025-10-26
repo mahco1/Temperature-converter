@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+  <link rel="stylesheet" href="TempConverter.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="" class="Temp-form">
+            <div class="form-heading">
+                <i class="ph-bold ph-thermometer-simple"></i>
+                <span><h1>G6 Temperature</h2>
+                    <h2>Converter</h3></span></div>
+            <input type="number" class="form-input" id="mainTempInput" value="" placeholder="Enter temperature value">
+            <div class="select">
+                <select name="From" class="options" id="temp1">
+                    <option value="" disabled selected hidden>From</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
+            <span id="convert-icon"><i class="ph-fill ph-arrows-clockwise"></i></span>
+            <select name="To" class="options" id="temp2">
+                <option value="" disabled selected hidden>To</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select></div>
+            <button type="button" onclick="convertTemp()" class="form-button" id="convertBtn">Convert</button>
+            <div class="form-result" id="results">
+                <h1 id="mainResult"><!--resultvalue °C--></h1>
+                <div class="form-result-list" id="allResults">
+                    <ul>
+                        <li>Celsius:</li>
+                        <li>Fahrenheit:</li>
+                        <li>Kelvin:</li>
+                    </ul>
+                    <ul>
+                        <li>- °C</li>
+                        <li>- °F</li>
+                        <li>- K</li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+  </div>
+  <script src="temperature.js"></script>  
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+:root {
+    --primary-color:#ac1313;
+    --background-inner:#ffffff2b;
+    --border-2-color:#cdcdcd;
+}
+.form-container{
+    display: flex;
+    margin: 35rem;
+    align-items: center;
+    justify-content: center;
+}
+.Temp-form{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 5px solid var(--primary-color);
+    border-radius: 2.5rem;
+    background-color: #e6e7f583;
+    line-height: 10rem;
+    font-size: 2rem;
+}
+.form-heading{
+    padding-bottom: 2rem;
+    line-height: 5rem;
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    display: flex;
+}
+.form-heading > i {
+    font-size: 8rem;
+}
+.form-input, .select > .options, .form-button, .form-result{
+    border-color:var(--border-2-color);
+    border-radius: 1rem;
+    padding: 1.3rem;
+    font-size: 2rem;
+    color: #5c5c5c;
+    background-color: var(--background-inner);
+}
+.form-input:focus {
+    border-color: var(--primary-color);
+}
+.select > span > i{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.options{
+    width: 20rem;
+}
+.options:focus{
+    border-color: var(--primary-color);
+    border-width: 3px;
+}
+.form-button{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.4rem;
+    cursor: pointer;
+    box-shadow: -4px 8px 5px rgba(0, 0, 0, 0.3);
+    transition:all 0.3s;
+}
+.form-button:hover {
+    transform: translateY(4px);
+    box-shadow: 3px -4px 8px rgba(0, 0, 0, 0.4);
+}
+.form-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid  var(--border-2-color);
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    background-color: var(--background-inner);
+}
+.form-result > h1{
+    color: var(--primary-color);
+    font-size: 8rem;
+    /* transform: scale(1.1);
+    transition: 0.6s ease-in-out; */
+}
+.form-result-list{
+    display: flex;
+    gap: 3rem;
+}
+.form-result-list > ul > li{
+    list-style: none;
+    line-height: 3rem;
+}
+@media  (max-width: 1210px) {
+    .options {
+        width:45rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 0;
+        margin: 2rem 0;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .select > #convert-icon{
+        margin-left: 45%;
+    }
+    .select{
+        line-height: 1rem;
+    }
+
+}
