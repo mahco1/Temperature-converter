@@ -5,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 html{
     font-size: 40%;
@@ -122,4 +122,5 @@ html{
         margin-top: 4rem;
     }
 }
+
 
