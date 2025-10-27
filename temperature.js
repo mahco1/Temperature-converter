@@ -11,7 +11,7 @@ function convertTemp() {
   
     // Input validation
     if (isNaN(input)) {
-      mainResult.innerHTML = "⚠ Enter a temperature value.";
+      mainResult.innerHTML = "⚠ Enter a valid temperature value.";
       mainResult.style.color = "#ff5555";
       mainResult.style.fontSize = "2.5rem";
      resultsDiv.style.border = "1px solid #ac1313";
@@ -65,4 +65,5 @@ function convertTemp() {
 
     allResults.style.display = "flex";
   }
+
   
